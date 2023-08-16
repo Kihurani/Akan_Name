@@ -99,83 +99,84 @@
                  //             alert("Second operand is : "+Operand_2) 
                    //           alert("third operand is : "+Operand_3)
                      //         alert("fourth operand is : "+Operand_4)
-                        //      alert("Fifth operand is : "+Operand_5)
+                       //       alert("Fifth operand is : "+Operand_5)
 
 
-      
-switch (Operand_5)
-{
-  case 0:
-  MagWkDay = "Sunday";
-    break;
-  case 1:
-  MagWkDay = "Monday";
-    break;
-  case 2:
-  MagWkDay = "Tuesday";
-    break;
-  case 3:
-  MagWkDay = "Wednesday";
-    break;
-  case 4:
-  MagWkDay = "Thursday";
-    break;
-  case 5:
-  MagWkDay = "Friday";
-    break;
-  case  6:
-  MagWkDay = "Saturday";
-}
+                                                  
+                               switch (Operand_5)
+                                            {
+                                              case 0:
+                                              MagWkDay = "Sunday";
+                                                break;
+                                              case 1:
+                                              MagWkDay = "Monday";
+                                                break;
+                                              case 2:
+                                              MagWkDay = "Tuesday";
+                                                break;
+                                              case 3:
+                                              MagWkDay = "Wednesday";
+                                                break;
+                                              case 4:
+                                              MagWkDay = "Thursday";
+                                                break;
+                                              case 5:
+                                              MagWkDay = "Friday";
+                                                break;
+                                              case  6:
+                                              MagWkDay = "Saturday";
+                                            }
 
-alert("The years magic Weekday is " + MagWkDay)
+                           //                 alert("The years magic Weekday is " + MagWkDay)
 
 
-alert("The month bornyou were is..."+Monthborn)
-let MM=Monthborn*1
-switch (MM) 
-{
-  case 1:
-    RefDat=3;
-    break;
-  case 2:
-    RefDat=28;
-    break;
-  case 3:
-    RefDat=14;
-    break;
-  case 4:
-    RefDat=4;
-    break;
-  case 5:
-    RefDat=9;
-    break;
-  case 6:
-    RefDat=6;
-    break;
-  case 7:
-    RefDat=11;
-    break;
-  case 8:
-    RefDat=8;
-    break;
-  case 9:
-    RefDat=5;
-    break;
-  case 10:
-    RefDat=10;
-    break;
-  case 11:
-    RefDat=7;
-    break;
-  case 12:
-    RefDat=12;
-    break;
-}
+                        alert("The month born you were is..."+Monthborn)
+                              let MM=Monthborn*1
+                                    switch (MM) 
+                                                  {
+                                                    case 1:
+                                                      RefDat=3;
+                                                      break;
+                                                    case 2:
+                                                      RefDat=28;
+                                                      break;
+                                                    case 3:
+                                                      RefDat=14;
+                                                      break;
+                                                    case 4:
+                                                      RefDat=4;
+                                                      break;
+                                                    case 5:
+                                                      RefDat=9;
+                                                      break;
+                                                    case 6:
+                                                      RefDat=6;
+                                                      break;
+                                                    case 7:
+                                                      RefDat=11;
+                                                      break;
+                                                    case 8:
+                                                      RefDat=8;
+                                                      break;
+                                                    case 9:
+                                                      RefDat=5;
+                                                      break;
+                                                    case 10:
+                                                      RefDat=10;
+                                                      break;
+                                                    case 11:
+                                                      RefDat=7;
+                                                      break;
+                                                    case 12:
+                                                      RefDat=12;
+                                                      break;
+                                                  }
 
-alert("The months magic Weekday falls on " + RefDat)
+                        alert("The months magic Weekday falls on date " + RefDat)
 
-let WkDayBorn=((Dateborn-RefDat)%7)+Operand_5  // Dateborn is date provided at input for the month MM provided 
+let WkDayBorn=(((Dateborn-RefDat)%7)+Operand_5)%7  // Dateborn is date provided at input for the month MM provided 
 
+alert("Weekday code is "+WkDayBorn)
 switch (WkDayBorn) 
 {
 case 0:
