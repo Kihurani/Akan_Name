@@ -46,16 +46,66 @@
 
      </div>
    
-     <p id="demo"></p>
-        <script>
+             <script>
 
                         var Yearborn=prompt("Which year were you born ?")
                         var Monthborn=prompt("Which month were you born ?")
                          var Dateborn=prompt("Which date were you born ?")
+
+                         alert("You were born on "+Dateborn+" "+Monthborn+" "+Yearborn)
+
+                              const CC= Yearborn.slice(0, 2);
+                              const YY= Yearborn.slice(2, 4);
+                              // console.log(CC);
+
+                              alert("Century year is : "+CC)
+                              alert("Units year is : "+YY)
+
+                              let y=CC*1                         
+
+                                   switch (y) {
+                                        case 18:
+                                        case 14:
+                                        case 10:
+                                             Operand_1 =5;
+                                             break;
+                                        case 19:
+                                        case 15:
+                                        case 11: 
+                                             Operand_1 =3;
+                                             break;
+                                        case 20:
+                                        case 16: 
+                                        case 12: 
+                                             Operand_1 =2;
+                                             break;
+                                        case 21:
+                                        case 17:
+                                        case 13:
+                                             Operand_1 =0;
+                                   }
+                              alert("The first operand Value is " + Operand_1); //(5 if CC=18; 3 if CC=19; 2 if CC=20; 0 if CC=21) 
+
+                              var   Operand_2=Math.floor(YY/12) // extract the years quotient after dividing by 12
+
+                              var Operand_3=YY%12  // extract the years remainder after dividing by 12
+
+                              var   Operand_4=Operand_3%4  // extract the remainder after dividing Operand_3 by 4
+
+
+                              var  Operand_5=(Operand_1+Operand_2+Operand_3+Operand_4)%7  // add above operands and extract remainder after dividing by 7 to get the years magic weekday value where
+
+                            //  alert("First operand is : "+Operand_1) 
+                 //             alert("Second operand is : "+Operand_2) 
+                   //           alert("third operand is : "+Operand_3)
+                     //         alert("fourth operand is : "+Operand_4)
+                              alert("Fifth operand is : "+Operand_5)
+
+
       
 let Dayborn;
 
-switch (new Date("1989-6-14").getDay()) 
+switch (Operand_5) 
 
 {
   case 0:
@@ -80,7 +130,7 @@ switch (new Date("1989-6-14").getDay())
   Dayborn = "Saturday";
 }
 
-alert("Manze You were born on a " + Dayborn)
+alert("The years magic Weekday is " + Dayborn)
         </script>
     
 </body>
