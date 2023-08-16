@@ -45,18 +45,43 @@
         </div>
 
      </div>
-     <console class="log">Alaa,alaa,alaa</console>
-     console.log(DaysOfTheWeek)
-
-
-     
+   
      <p id="demo"></p>
+        <script>
 
-<script>
-     const DaysOfWeek = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday","Saturday"]
-     let size = DaysOfWeek.length;
-document.getElementById("demo").innerHTML = size;
-</script>
+                        var Yearborn=prompt("Which year were you born ?")
+                        var Monthborn=prompt("Which month were you born ?")
+                         var Dateborn=prompt("Which date were you born ?")
+      
+let Dayborn;
 
+switch (new Date("1989-6-14").getDay()) 
+
+{
+  case 0:
+  Dayborn = "Sunday";
+    break;
+  case 1:
+  Dayborn = "Monday";
+    break;
+  case 2:
+  Dayborn = "Tuesday";
+    break;
+  case 3:
+  Dayborn = "Wednesday";
+    break;
+  case 4:
+  Dayborn = "Thursday";
+    break;
+  case 5:
+  Dayborn = "Friday";
+    break;
+  case  6:
+  Dayborn = "Saturday";
+}
+
+alert("Manze You were born on a " + Dayborn)
+        </script>
+    
 </body>
 </html>
