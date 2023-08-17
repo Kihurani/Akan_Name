@@ -1,7 +1,17 @@
+let btnShow=document.querySelector('button');
+let result = document.querySelector('h3');
+
+btnShow.addEventListener('click',() =>{
+    let selected = document.querySelector('input[type="radio"]:checked');
+    result.innerText = selected.value;
+    result.innerText = selected.parentElement.textContent;
+    alert(result.innerText)
+})
+
 var Yearborn=prompt("Which year were you born ?")
                         var Monthborn=prompt("Which month were you born ?")
                          var Dateborn=prompt("Which date were you born ?")
-                         var Gender=prompt("What gender are you ?")
+
 
                          alert("You were born on "+Dateborn+" "+Monthborn+" "+Yearborn)
 
