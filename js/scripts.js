@@ -1,3 +1,4 @@
+
 let btnShow=document.querySelector('button');
 let result = document.querySelector('h3');
 
@@ -6,7 +7,10 @@ btnShow.addEventListener('click',() =>{
     result.innerText = selected.value;
     result.innerText = selected.parentElement.textContent;
     alert(result.innerText)
-})
+
+
+    Gender=result.innerText
+    alert("your gender is "+result.innert)
 
 var Yearborn=prompt("Which year were you born ?")
                         var Monthborn=prompt("Which month were you born ?")
@@ -171,3 +175,6 @@ case 0:
   }
 
 alert("You were born a " + Dayborn+" and your Akan name is "+AkanName)
+
+})
+    
