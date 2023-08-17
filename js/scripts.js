@@ -8,13 +8,14 @@ btnShow.addEventListener('click',() =>{
     result.innerText = selected.parentElement.textContent;
     alert(result.innerText)
 
+   var  Gender=result.innerText
+  
+                     alert("your gender is "+Gender)
+                     alert("For your biodata, ensure you put in as advised");
 
-    Gender=result.innerText
-    alert("your gender is "+result.innert)
-
-var Yearborn=prompt("Which year were you born ?")
-                        var Monthborn=prompt("Which month were you born ?")
-                         var Dateborn=prompt("Which date were you born ?")
+                        var Yearborn=prompt("Which year were you born ? (Input 4 digits,YYYY)")
+                        var Monthborn=prompt("Which month were you born ? (Use digit values between 1 and 12)")
+                        var Dateborn=prompt("Which date were you born ? (Use digit values between 1 and 31)")
 
 
                          alert("You were born on "+Dateborn+" "+Monthborn+" "+Yearborn)
@@ -23,8 +24,8 @@ var Yearborn=prompt("Which year were you born ?")
                               var YY= Yearborn.slice(2, 4);
                               // console.log(CC);
 
-                              alert("Century year is : "+CC);
-                              alert("Units year is : "+YY);
+                              // alert("Century year is : "+CC);
+                              // alert("Units year is : "+YY);
 
                               let UY=CC*1 ;
                              // alert("the value for YY is"y);
@@ -96,7 +97,7 @@ var Yearborn=prompt("Which year were you born ?")
                            //                 alert("The years magic Weekday is " + MagWkDay)
 
 
-                        alert("The month born you were is..."+Monthborn)
+                        //alert("The month born you were is..."+Monthborn)
                               let MM=Monthborn*1
                                     switch (MM) 
                                                   {
@@ -138,11 +139,11 @@ var Yearborn=prompt("Which year were you born ?")
                                                       break;
                                                   }
 
-                        alert("The months magic Weekday falls on date " + RefDat)
+                       // alert("The months magic Weekday falls on date " + RefDat)
 
 let WkDayBorn=(((Dateborn-RefDat)%7)+Operand_5)%7  // Dateborn is date provided at input for the month MM provided 
 
-alert("Weekday code is "+WkDayBorn)
+// alert("Weekday code is "+WkDayBorn)
 switch (WkDayBorn) 
 {
 case 0:
@@ -174,7 +175,7 @@ case 0:
   AkanName= "Kwame"
   }
 
-alert("You were born a " + Dayborn+" and your Akan name is "+AkanName)
+alert("You were born a " + Dayborn+" and your Akan name is "+AkanName);
 
 })
     
