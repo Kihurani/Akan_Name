@@ -158,91 +158,85 @@ let WkDayBorn=(((Dateborn-RefDat)%7)+Operand_5)%7  // Dateborn is date provided 
 
 // alert("Weekday code is "+WkDayBorn)
 switch (WkDayBorn) 
-{
-case 0:
-  Dayborn = "Sunday";
-         switch (Gender)
-           {
-            case "Male":
-            AkanName= "Kwasi";
-            break;
-            case "Female" :
-              AkanName = "Akosua"
-              break;
-           }
-    break;
-  case 1:
-  Dayborn = "Monday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Kwadwo";
-   break;
-   case "Female" :
-     AkanName = "Adwoa"
-     break;
-  }
-    break;
-  case 2:
-  Dayborn = "Tuesday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Kwabena";
-   break;
-   case "Female" :
-     AkanName = "Abenaa"
-     break;
-  }
-    break;
-  case 3:
-  Dayborn = "Wednesday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Kwaku";
-   break;
-   case "Female" :
-     AkanName = "Akua"
-     break;
-  }
-    break;
-  case 4:
-  Dayborn = "Thursday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Yaw";
-   break;
-   case "Female" :
-     AkanName = "Yaa"
-     break;
-  }
-    break;
-  case 5:
-  Dayborn = "Friday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Kofi";
-   break;
-   case "Female" :
-     AkanName = "Afua"
-     break;
-  }
-    break;
-  case  6:
-  Dayborn = "Saturday";
-  switch (Gender)
-  {
-   case "Male":
-   AkanName= "Kwame";
-   break;
-   case "Female" :
-     AkanName = "Ama"
-     break;
-  }
-  }
+                   {
+                     case 0:
+                            Dayborn = "Sunday";
+                                           switch (Gender)
+                                                  {
+                                                    case "Male":
+                                                       AkanName= "Kwasi";
+                                                    break;
+                                                    case "Female" :
+                                                       AkanName = "Akosua"
+                                                  }
+                                           break;
+                     case 1:
+                            Dayborn = "Monday";
+                                            switch (Gender)
+                                                  {
+                                                     case "Male":
+                                                        AkanName= "Kwadwo";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Adwoa"
+    
+                                                  }
+                                            break;
+                     case 2:
+                            Dayborn = "Tuesday";
+                                            switch (Gender)
+                                                  {
+                                                     case "Male":
+                                                        AkanName= "Kwabena";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Abenaa"
+                                                  }
+                                            break;
+                     case 3:
+                            Dayborn = "Wednesday";
+                                            switch (Gender)
+                                                    {
+                                                     case "Male":
+                                                        AkanName= "Kwaku";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Akua"
+                                                    }
+                                            break;
+                     case 4:
+                            Dayborn = "Thursday";
+                                            switch (Gender)
+                                                    {
+                                                     case "Male":
+                                                        AkanName= "Yaw";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Yaa"
+                                                    }
+                                            break;
+                     case 5:
+                            Dayborn = "Friday";
+                                            switch (Gender)
+                                                    {
+                                                     case "Male":
+                                                        AkanName= "Kofi";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Afua"
+                                                    }
+                                            break;
+                     case  6:
+                            Dayborn = "Saturday";
+                                            switch (Gender)
+                                                    {
+                                                     case "Male":
+                                                        AkanName= "Kwame";
+                                                      break;
+                                                     case "Female" :
+                                                        AkanName = "Ama"
+                                                    }
+                    }
 
 alert("You were born a " + Dayborn+" and your Akan name is "+AkanName);
 
