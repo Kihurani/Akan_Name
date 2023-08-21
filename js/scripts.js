@@ -161,31 +161,87 @@ switch (WkDayBorn)
 {
 case 0:
   Dayborn = "Sunday";
-  AkanName= "Kwasi"
+         switch (Gender)
+           {
+            case "Male":
+            AkanName= "Kwasi";
+            break;
+            case "Female" :
+              AkanName = "Akosua"
+              break;
+           }
     break;
   case 1:
   Dayborn = "Monday";
-  AkanName= "Kwadwo"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Kwadwo";
+   break;
+   case "Female" :
+     AkanName = "Adwoa"
+     break;
+  }
     break;
   case 2:
   Dayborn = "Tuesday";
-  AkanName= "Kwabena"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Kwabena";
+   break;
+   case "Female" :
+     AkanName = "Abenaa"
+     break;
+  }
     break;
   case 3:
   Dayborn = "Wednesday";
-  AkanName= "Kwaku"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Kwaku";
+   break;
+   case "Female" :
+     AkanName = "Akua"
+     break;
+  }
     break;
   case 4:
   Dayborn = "Thursday";
-  AkanName= "Yaw"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Yaw";
+   break;
+   case "Female" :
+     AkanName = "Yaa"
+     break;
+  }
     break;
   case 5:
   Dayborn = "Friday";
-  AkanName= "Kofi"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Kofi";
+   break;
+   case "Female" :
+     AkanName = "Afua"
+     break;
+  }
     break;
   case  6:
   Dayborn = "Saturday";
-  AkanName= "Kwame"
+  switch (Gender)
+  {
+   case "Male":
+   AkanName= "Kwame";
+   break;
+   case "Female" :
+     AkanName = "Ama"
+     break;
+  }
   }
 
 alert("You were born a " + Dayborn+" and your Akan name is "+AkanName);
