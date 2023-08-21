@@ -17,8 +17,64 @@ btnShow.addEventListener('click',() =>{
                         var Monthborn=prompt("Which month were you born ? (Use digit values between 1 and 12)")
                         var Dateborn=prompt("Which date were you born ? (Use digit values between 1 and 31)")
 
+                       //alert("The month born you were is..."+Monthborn)
+                       let MM=Monthborn*1
+                       switch (MM) 
+                                     {
+                                       case 1:
+                                         RefDat=3;
+                                         MB='January';
+                                         break;
+                                       case 2:
+                                         RefDat=28;
+                                         MB='February';
+                                         break;
+                                       case 3:
+                                         RefDat=14;
+                                         MB='March';
+                                         break;
+                                       case 4:
+                                         RefDat=4;
+                                         MB='April';
+                                         break;
+                                       case 5:
+                                         RefDat=9;
+                                         MB='May';
+                                         break;
+                                       case 6:
+                                         RefDat=6;
+                                         MB='June';
+                                         break;
+                                       case 7:
+                                         RefDat=11;
+                                         MB='July';
+                                         break;
+                                       case 8:
+                                         RefDat=8;
+                                         MB='August';
+                                         break;
+                                       case 9:
+                                         RefDat=5;
+                                         MB='September';
+                                         break;
+                                       case 10:
+                                         RefDat=10;
+                                         MB='October';
+                                         break;
+                                       case 11:
+                                         RefDat=7;
+                                         MB='November';
+                                         break;
+                                       case 12:
+                                         RefDat=12;
+                                         MB='December';
+                                         break;
+                                     }
 
-                         alert("You were born on "+Dateborn+" "+Monthborn+" "+Yearborn)
+          // alert("The months magic Weekday falls on date " + RefDat)
+
+
+                         alert("You were born on "+MB+" "+Dateborn+", "+Yearborn)
 
                               var CC= Yearborn.slice(0, 2);
                               var YY= Yearborn.slice(2, 4);
@@ -97,50 +153,7 @@ btnShow.addEventListener('click',() =>{
                            //                 alert("The years magic Weekday is " + MagWkDay)
 
 
-                        //alert("The month born you were is..."+Monthborn)
-                              let MM=Monthborn*1
-                                    switch (MM) 
-                                                  {
-                                                    case 1:
-                                                      RefDat=3;
-                                                      break;
-                                                    case 2:
-                                                      RefDat=28;
-                                                      break;
-                                                    case 3:
-                                                      RefDat=14;
-                                                      break;
-                                                    case 4:
-                                                      RefDat=4;
-                                                      break;
-                                                    case 5:
-                                                      RefDat=9;
-                                                      break;
-                                                    case 6:
-                                                      RefDat=6;
-                                                      break;
-                                                    case 7:
-                                                      RefDat=11;
-                                                      break;
-                                                    case 8:
-                                                      RefDat=8;
-                                                      break;
-                                                    case 9:
-                                                      RefDat=5;
-                                                      break;
-                                                    case 10:
-                                                      RefDat=10;
-                                                      break;
-                                                    case 11:
-                                                      RefDat=7;
-                                                      break;
-                                                    case 12:
-                                                      RefDat=12;
-                                                      break;
-                                                  }
-
-                       // alert("The months magic Weekday falls on date " + RefDat)
-
+ 
 let WkDayBorn=(((Dateborn-RefDat)%7)+Operand_5)%7  // Dateborn is date provided at input for the month MM provided 
 
 // alert("Weekday code is "+WkDayBorn)
