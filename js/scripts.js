@@ -15,10 +15,11 @@ btnShow.addEventListener('click',() =>{
 
                         var Yearborn=prompt("Which year were you born ? (Input 4 digits,YYYY)")
                         var Monthborn=prompt("Which month were you born ? (Use digit values between 1 and 12)")
+                       //    alert((Monthborn==='' || isNaN(Monthborn))?"Use digit values between 1 and 12":$'{Monthborn}');
                         var Dateborn=prompt("Which date were you born ? (Use digit values between 1 and 31)")
 
-                       //alert("The month born you were is..."+Monthborn)
-                       let MM=Monthborn*1
+                       let MM=Monthborn*1;
+
                        switch (MM) 
                                      {
                                        case 1:
@@ -84,7 +85,7 @@ btnShow.addEventListener('click',() =>{
                               // alert("Units year is : "+YY);
 
                               let UY=CC*1 ;
-                             // alert("the value for YY is"y);
+                             let SY=YY*1
 
                                    switch (UY) {
                                         case 18:
@@ -152,6 +153,63 @@ btnShow.addEventListener('click',() =>{
 
                            //                 alert("The years magic Weekday is " + MagWkDay)
 
+
+                           var YB=(Yearborn*1);
+                           //                       alert("The multiplied by 1 year number is "+YB);
+                                                 
+                                  switch(YB%4)
+                                       { 
+                                        case 0:
+                                          switch(UY%4)
+                                                {
+                                                   case 0:
+                                                     Ytype="Leap";
+                                                    break;
+                                                   case 1:
+                                                      switch(SY%4)
+                                                          {
+                                                            case 0:
+                                                              Ytype="Leap";
+                                                            break;
+                                                            case 1 :
+                                                            case 2 :
+                                                            case 3 :
+                                                              Ytype="Norm"
+                                                          } 
+                                                   case 2:
+                                                    switch(SY%4)
+                                                    {
+                                                      case 0:
+                                                        Ytype="Leap";
+                                                      break;
+                                                      case 1 :
+                                                      case 2 :
+                                                      case 3 :
+                                                        Ytype="Norm"
+                                                    } 
+
+                                                   case 3:
+                                                    switch(SY%4)
+                                                    {
+                                                      case 0:
+                                                        Ytype="Leap";
+                                                      break;
+                                                      case 1 :
+                                                      case 2 :
+                                                      case 3 :
+                                                        Ytype="Norm"
+                                                    } 
+                                              
+                                              }
+                                        break;
+                                        case 1 :
+                                        case 2:
+                                        case 3:
+                                              Ytype="Norm";
+
+                                       }   
+                          
+                                                     alert("The year is a type "+Ytype);
 
  
 let WkDayBorn=(((Dateborn-RefDat)%7)+Operand_5)%7  // Dateborn is date provided at input for the month MM provided 
