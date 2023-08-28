@@ -82,7 +82,7 @@ btnShow.addEventListener('click',() =>{
 
                         }   
            
-                                      alert("The year is a type "+Ytype);
+ //                                     alert("The year is a type "+Ytype);
 
  // Each month has a similar weekday code depending on whether it's a leap year or not
                        switch (MM) 
